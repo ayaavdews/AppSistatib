@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_tambah"
+        android:orderInCategory="100"
+        android:title="Tambah Peraturan" />
+
+    <item
+        android:id="@+id/menu_ubah"
+        android:orderInCategory="100"
+        android:title="Ubah Peraturan" />
+
+    <item
+        android:id="@+id/menu_hapus"
+        android:orderInCategory="101"
+        android:title="Hapus Peraturan"></item>
+</menu>

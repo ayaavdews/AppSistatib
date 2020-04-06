@@ -1,0 +1,117 @@
+<resources>
+
+    <string name="API_KEY">sistatib01</string>
+    <string name="create_by">Aya Avdews</string>
+    <string name="app_name">App Sistatib</string>
+    <string name="title_activity_admin">AdminActivity</string>
+
+    <!--  Title yang digunakan di semua fragment profile (Admin, Guru, Siswa)  -->
+    <string name="title_profile">Profile</string>
+
+    <!--  Title for fragment Administrator  -->
+    <string name="title_tatib">Tata Tertib</string>
+    <string name="title_dashboard">Dashboard</string>
+
+    <!--  Title for fragment Guru  -->
+    <string name="title_siswa">Siswa</string>
+    <string name="title_peraturan">Tata Tertib</string>
+
+    <!-- RoleAccess for Teacher -->
+    <string-array name="role">
+        <item>Admin</item>
+        <item>Operator</item>
+    </string-array>
+
+    <!-- For Method Delete and Update (Put) -->
+    <string name="delete">delete</string>
+    <string name="update">update</string>
+
+    <!-- For Method to REST_API : GET, POST, PUT, DELETE) -->
+    <string name="url_guru">http://app-sistatib.000webhostapp.com/api/guru</string>
+    <string name="url_siswa">http://app-sistatib.000webhostapp.com/api/siswa</string>
+    <string name="url_kelas">http://app-sistatib.000webhostapp.com/api/kelas</string>
+    <string name="login_guru">http://app-sistatib.000webhostapp.com/api/login</string>
+    <string name="url_riwayat">http://app-sistatib.000webhostapp.com/api/riwayat</string>
+    <string name="url_peraturan">http://app-sistatib.000webhostapp.com/api/peraturan</string>
+
+
+    <!-- Validasi inputan pada aplikasi -->
+    <string name="only_number">12345 67890</string>
+    <string name="only_number_nis">1234567890</string>
+    <string name="only_alphabet">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="only_alphabel_and_number">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</string>
+
+    <!-- Toast Message -->
+    <string name="wrong_nis">NIS tidak ditemukan!</string>
+    <string name="short_nis">NIS terlalu pendek!</string>
+    <string name="short_nip">NIP terlalu pendek!</string>
+    <string name="empty_nis">NIS masih kosong!</string>
+    <string name="wrong_nip_or_password">NIP/Password salah!</string>
+    <string name="empty_nip_or_password">Harap isi semua data!</string>
+    <string name="not_connection">Tidak ada Koneksi!</string>
+    <string name="siswa_tertib">Siswa belum pernah melakukan pelanggaran</string>
+    <string name="empty_data">Data masih kosong!</string>
+    <string name="empty_class">Data kelas masih kosong</string>
+    <string name="password_not_match">Password tidak sama</string>
+
+    <string name="delete_failed">Data gagal dihapus!</string>
+    <string name="delete_success">Data berhasil dihapus!</string>
+
+    <string name="update_failed">Data gagal diupdate!</string>
+    <string name="update_success">Data berhasil diupdate!</string>
+
+    <string name="insert_failed">Data baru gagal ditambahkan</string>
+    <string name="insert_success">Data baru berhasil ditambahkan</string>
+
+    <string-array name="mapel">
+        <item>Normatif Adaptif</item>
+        <item>Kejuruan</item>
+        <item>Karyawan</item>
+        <item>BK</item>
+        <item>WKS</item>
+    </string-array>
+
+    <string name="icon_kelas">
+        <item>icon_rpl</item>
+        <item>icon_tkj</item>
+        <item>icon_tav</item>
+    </string>
+
+    <string-array name="kelas">
+        <!-- Kelas X -->
+        <item>X RPL A</item>
+        <item>X RPL B</item>
+        <item>X TKJ A</item>
+        <item>X TKJ B</item>
+        <item>X TKJ C</item>
+        <item>X TAV A</item>
+        <item>X TAV B</item>
+        <item>X TAV C</item>
+
+        <!-- Kelas XI -->
+        <item>XI RPL A</item>
+        <item>XI RPL B</item>
+        <item>XI TKJ A</item>
+        <item>XI TKJ B</item>
+        <item>XI TKJ C</item>
+        <item>XI TAV A</item>
+        <item>XI TAV B</item>
+        <item>XI TAV C</item>
+
+        <!-- Kelas XII-->
+        <item>XII RPL A</item>
+        <item>XII RPL B</item>
+        <item>XII TKJ A</item>
+        <item>XII TKJ B</item>
+        <item>XII TKJ C</item>
+        <item>XII TAV A</item>
+        <item>XII TAV B</item>
+        <item>XII TAV C</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>laki-laki</item>
+        <item>perempuan</item>
+    </string-array>
+
+</resources>

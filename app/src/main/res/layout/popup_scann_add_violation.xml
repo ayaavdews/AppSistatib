@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_02"
+        android:gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah pelanggaran baru"
+            android:textSize="18dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/chewy"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/tv_nis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/chewy"
+            android:text="Siswa dengan nis 17006892 melakukan pelanggaran :"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompletePeraturan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:hint="cari peraturan..."
+            android:background="@drawable/input_style02"/>
+
+        <RelativeLayout
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_skor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/chewy"
+                android:textColor="#000000"
+                android:text="SKOR = ---"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/chewy"
+            android:textSize="13dp"
+            android:background="@drawable/button_style02"
+            android:text="SAVE"/>
+
+    </LinearLayout>
+
+</LinearLayout>

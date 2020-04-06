@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  for animation button in login  -->
+    <dimen name="get_width">56dp</dimen>
+</resources>

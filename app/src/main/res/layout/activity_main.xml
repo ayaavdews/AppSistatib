@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_background"
+        tools:context = ".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/app_logo"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:src="@drawable/app_title"/>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/il_nip"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_nip"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="NIP"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:maxLength="21"
+                        android:inputType="number"
+                        android:longClickable="false"
+                        android:textIsSelectable="false"
+                        android:digits="@string/only_number"
+                        android:visibility="gone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/il_nis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_nis"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="NIS"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:maxLength="8"
+                        android:inputType="number"
+                        android:longClickable="false"
+                        android:textIsSelectable="false"
+                        android:digits="@string/only_number_nis"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/il_password"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="PASSWORD"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:maxLength="9"
+                        android:longClickable="false"
+                        android:textIsSelectable="false"
+                        android:digits="@string/only_alphabel_and_number"
+                        android:inputType="textPassword"
+                        android:visibility="gone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/chewy"
+                android:text="Login sebagai guru ?"
+                android:textColor="@color/colorAccent"
+                android:textSize="14dp" />
+
+            <Switch
+                android:id="@+id/btn_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/SCBSwitch"
+                android:textOff="OFF"
+                android:textOn ="ON"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/signInBtn"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/sign_in_btn"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:id="@+id/signInText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lily_script_one"
+                android:text="sign in"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/revealView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</layout>
