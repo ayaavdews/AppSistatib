@@ -7,6 +7,7 @@ aplikasi tugas akhir di SMK, yang ditujukan sebagai pengganti buku tata tertib k
 
 Aplikasi ini menggunakan :
 - CodeIgniter rest api
+- Zxing scanner
 - loopJ
 
 Aplikasi ini dibagi menjadi 3 user/hak akses yaitu :
@@ -25,7 +26,7 @@ Aplikasi ini dibagi menjadi 3 user/hak akses yaitu :
   - sama seperti guru, tetapi ada beberapa tambahan hak akses :
     - menambah, mengubah, dan menghapus data & riwayat pelanggaran siswa.
     - menambah, mengubah, dan menghapus data guru.
-    - menambah, mengubahm dan menghapus data peraturan/tata tertib
+    - menambah, mengubah, dan menghapus data peraturan/tata tertib
     <img src="images/preview_appSistatib_admin.png" width="500">
 
 Kekurangan :
